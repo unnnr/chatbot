@@ -1,0 +1,21 @@
+{
+    "name": "unnr/chatbot",
+    "version": "1.0.0-dev",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ChatBot\\": "src/",
+            "ChatBot\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "symfony/dotenv": "^6.1",
+        "symfony/yaml": "^6.1",
+        "symfony/dependency-injection": "^6.1",
+        "phpunit/phpunit": "^9.5",
+        "doctrine/orm": "^2.13",
+        "doctrine/migrations": "^3.5",
+        "symfony/cache": "^6.1"
+    }
+}

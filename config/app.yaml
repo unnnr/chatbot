@@ -1,0 +1,22 @@
+app:
+  devmode: '%env(DEV_MODE)%'
+
+telegram:
+  token: 'asdasd'
+
+doctrine:
+  migrations:
+    dir: '%app.project_dir%/migrations'
+
+  orm:
+    entites_dir: '%app.project_dir%/src'
+    
+  connection:
+    user: '%env(DB_USER)%'
+    dbname: '%env(DB_NAME)%'
+    password: '%env(DB_PASSWORD)%'
+    driver: 'pdo_mysql'
+
+parser:
+  temp_storage: '%app.project_dir%/assets/temp'
+  document_format: 'xlsx'
